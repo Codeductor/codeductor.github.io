@@ -1,7 +1,10 @@
 {
-  "name": "codeductor.github.io",
+  "name": "codeductor.com",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "engines": {
     "node": ">=20.9.0"
   },
