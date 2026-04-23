@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# codeductor.com
 
-## Getting Started
+Official website for **Codeductor LLC**.
 
-First, run the development server:
+This repo is intentionally:
+- **Static-deployable** (GitHub Pages) via Next.js static export
+- **PR-first** (feature branches → protected `main`)
+- **Maintainable** (simple architecture, minimal dependencies)
+
+## What this site is
+
+A clean, fast landing page that explains what Codeductor is, what we do, and where to go next (portfolio, contact).
+
+## Tech
+
+- Next.js (App Router) + TypeScript
+- CSS (no Tailwind)
+- Radix UI primitives (accessibility-first building blocks)
+
+## Local development
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build (static export)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Output is generated to `out/`.
 
-## Learn More
+## Release / deploy
 
-To learn more about Next.js, take a look at the following resources:
+This project is intended to deploy from **tags/releases** (not every push).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Custom domain is `codeductor.com` (DNS configured separately).
