@@ -32,6 +32,12 @@ npm run build
 
 Output is generated to `out/`.
 
+To preview the static export locally:
+
+```bash
+npm run serve
+```
+
 ## Release / deploy
 
 This project is intended to deploy from **tags/releases** (not every push).
