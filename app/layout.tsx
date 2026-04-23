@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Coda, Geist_Mono } from "next/font/google";
+import type { ReactNode } from "react";
 import "./globals.css";
 
 const coda = Coda({
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" className={`${coda.variable} ${geistMono.variable}`}>
